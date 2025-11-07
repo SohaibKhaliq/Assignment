@@ -80,8 +80,40 @@ When to use which
 How to run
 - Install dependencies: `pip install -r requirements.txt`
 - See `README.md` for the quick run steps. Each demo starts a server (background) and runs a client/test script.
+- See `USER_GUIDE.md` for comprehensive documentation on using the interactive features.
+
+Interactive Features
+--------------------
+This implementation includes interactive versions of all three architectures:
+
+**SOA Interactive:**
+- `server_interactive.py`: Handles multiple messages, provides intelligent responses
+- `client_interactive.py`: Allows users to send custom messages in real-time
+- Features: Real-time dialogue, message logging, graceful error handling
+
+**RPC Interactive:**
+- `server_interactive.py`: Exposes 5 remote methods (greet, add, multiply, get_server_info, echo)
+- `client_interactive.py`: Menu-driven interface for calling any remote method
+- Features: Multiple method support, request logging with timestamps, parameter validation
+
+**REST Interactive:**
+- `client_interactive.py`: Full-featured CRUD menu for book management
+- Features: Formatted table display, input validation, confirmation prompts, operation counter
+- Supports all HTTP methods: GET (all/single), POST, PUT, DELETE
+
+Documentation Standards
+-----------------------
+All source files include:
+- Module-level docstrings explaining architecture and purpose
+- Function/method docstrings with parameters, returns, and examples
+- Inline comments explaining complex logic
+- Error handling with user-friendly messages
+- Professional logging and output formatting
 
 Deliverables
-- Source code: `soa/`, `rpc/`, `rest/`
+------------
+- Source code: `soa/`, `rpc/`, `rest/` (basic and interactive versions)
 - Report: this `report.md`
+- User Guide: `USER_GUIDE.md` with comprehensive instructions
+- README: Quick reference for all run modes
 
